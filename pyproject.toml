@@ -1,0 +1,29 @@
+[project]
+name = "trabalho-02-paralelismo-parte-c"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "alfredo",email = "alfredojoseneto@gmail.com"}
+]
+requires-python = "~3.11"
+dependencies = [
+    "ipython (>=9.13.0,<10.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.black]
+line-length = 150  # Default is 88; you can change this to 79, 100, etc.
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ipython (>=9.13.0,<10.0.0)",
+    "black (>=26.3.1,<27.0.0)",
+    "isort (>=8.0.1,<9.0.0)"
+]
